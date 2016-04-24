@@ -226,10 +226,8 @@ gist-it
 opt-cmd-g            // gist current file
 shift-opt-cmd-g      // gist current selection
 
-notes:
-token symlinked to ~/.atom/gist-it.token
-new gist are private
-
+notes:               // token symlinked from keys to ~/.atom/gist-it.token
+                      // new gists are private
 
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 atom-runner
@@ -281,7 +279,6 @@ maximize-panes          // https://atom.io/packages/maximize-panes
 merge-conflicts         // https://atom.io/packages/merge-conflicts
 minimap                 // https://atom.io/packages/minimap
 minimap-autohide        // https://atom.io/packages/minimap-autohide
-minimap-codeglance      // https://atom.io/packages/minimap-codeglance
 open-recent             // https://atom.io/packages/open-recent
 platformio-ide-terminal // https://atom.io/packages/platformio-ide-terminal
 project-manager         // https://atom.io/packages/project-manager
@@ -291,5 +288,6 @@ gist-it                 // https://atom.io/packages/gist-it
 installed, but disabled:
 atom-beautify           // https://atom.io/packages/atom-beautify
 atom-ctags              // https://atom.io/packages/atom-ctags
+minimap-codeglance      // https://atom.io/packages/minimap-codeglance
 pigments                // https://atom.io/packages/pigments
 symbols-tree-view       // https://atom.io/packages/symbols-tree-view
