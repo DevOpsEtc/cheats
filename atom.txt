@@ -1,0 +1,295 @@
+  #####################################################
+  ##  filename: atom.txt                             ##
+  ##  path:     ~/src/cheats/                        ##
+  ##  date:     04/24/2016                           ##
+  ##  repo:     https://github.com/WebAppNut/cheats  ##
+  #####################################################
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Multi-cursor Editing
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+ctrl-cmd-g          // select all occurrences of current word
+OR
+cmd-d cmd-d         // manually select occurrences of current word
+any key             // replace selected occurrences with key
+OR
+⬅︎ ➡︎                // move cursor to desired editing position
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Column Editing
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+ctrl-shift ⬆︎⬇︎      // select columns up/down
+⬅︎ ➡︎                // move cursor as needed
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Panes
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-k ⬆︎⬇︎⬅︎ ➡︎      // split pane horizontally/vertically at left/right
+cmd-k cmd-⬆︎⬇︎⬅︎ ➡︎  // change pane focus
+cmd-w              // close current pane
+opt-cmd-m          // maximize pane (package: maximize-panes; keymap.cson)
+ctrl-|             // split right, copy active (keymap.cson)
+ctrl--             // split bottom, copy active (keymap.cson)
+ctrl-⬆︎⬇︎⬅︎ ➡︎       // focus pane above/down/left/right (keymap.cson)
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Folding
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+opt-cmd-[ ]         // fold/unfold indentation
+opt-cmd-shift-[ ]   // fold/unfold everything
+opt-cmd-ctrl-f      // fold arbitrary selection
+cmd-k cmd-[1-9]     // fold indentation level
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Files | Tabs | Windows
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-t               // toggle fuzzy find (project scope)
+cmd-b               // toggle open file list
+cmd-n               // new file
+cmd-o               // open file
+cmd-shift-t         // reopen last file
+cmd-s               // save file
+cmd-shift-s         // save file as
+cmd-opt-s           // save all files
+cmd-w               // close tab
+cmd-opt ⬅︎ ➡︎        // goto prior/next tab
+cmd-shift-{}        // goto prior/next tab
+cmd-[x]             // goto to tab Number
+cmd-shift-n         // new window
+cmd-shift-w         // close window keymap.cson
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Git | Github
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-shift-b         // find modified & untracked files in current repo
+cmd-opt-z           // check out HEAD revision of current file
+opt-g o             // open on Github: open file
+opt-g b             // open on Github: blame
+opt-g h             // open on Github: history
+opt-g i             // open on Github: issues
+opt-g c             // open on Github: copy url
+opt-g g             // open on Github: repository
+opt-g r             // open on Github: branch-compare
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Diffs
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+opt-g d             // toggle list of diffs in file
+opt-g ⬆︎⬇︎           // goto next/previous diff in file
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Movement
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+ctrl-g [x] ent      // goto line number
+[x] -               // go back x number of lines (normal mode)
+[x] +               // go forward x number of lines (normal mode)
+ctrl-m              // goto matching bracket
+opt-b               // goto start of word
+opt-f               // goto end of word
+cmd-⬆︎⬇︎             // goto start/end of file
+cmd-⬅︎ ➡︎            // goto start/end of line
+ctrl-a              // goto start of line
+ctrl-e              // goto end of line
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Copy | Cut | Paste | Delete
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-c               // copy selected character(s)
+cmd-x               // cut selected character(s)
+ctrl-k              // cut to end of line
+cmd-v               // paste character(s)
+cmd-del             // delete to start of line
+opt-del             // delete to beginning of word
+opt-d               // delete to end of word
+ctrl-shift-k        // delete line
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Line
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-/               // toggle line comments
+cmd-] [             // line indent/outdent
+cmd-shift-d         // duplicate line
+cmd-j               // join current and next lines
+cmd-c               // copy line (no characters selected)
+cmd-l               // select line
+cmd-x               // cut line (no characters selected)
+cmd-v               // paste line
+ctrl-shift-k        // delete line
+ctrl-cmd-⬆︎⬇︎        // move line(s) up/down
+cmd-ent             // insert new line after current line
+cmd-shift-ent       // insert new line before current line
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Selection
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+opt-shift-b f       // select to beginning/end of word
+opt-shift-⬅︎ ➡︎      // select to beginning/end of word
+cmd-d               // select word; select next occurrence
+ctrl-shift-w        // select word
+shift-⬆︎⬇︎ ⬅︎ ➡︎      // select character(s) up/down/left/right
+shift-cmd-⬅︎ ➡︎      // select to start/end of line
+shift-cmd-⬆︎⬇︎       // select to start/end of file
+cmd-l               // select line
+cmd-a               // select all
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Tree View
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-\               // toggle tree view
+cmd-shift-o         // add project folder
+ctrl-0              // toggle tree view focus
+
+tree focus:
+a [path/name]       // add new file
+m [path]            // move or rename file
+del                 // delete file
+d                   // duplicate file
+shift-a             // add new folder
+i                   // toggle display of VCS ignored files
+ent                 // open selected file
+⬅︎ ➡︎                // collapse/expand folders
+opt-⬅︎ ➡︎            // recursively collapse/expand folders
+ctrl-shift-c        // copy full path
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Bookmarks
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-f2              // toggle bookmark
+ctrl-f2             // view all bookmarks
+cmd-shift-f2        // clear all bookmarks
+f2                  // goto next bookmark
+shift-f2            // goto previous bookmark
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Find | Replace
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-f               // find string in file
+cmd-e               // find string under cursor in file
+cmd-shift-f         // find selected string in file
+opt-cmd-f           // replace with selected string in file
+cmd-g               // find next matching string
+cmd-shift-g         // find previous matching string
+cmd-d               // select next matching string
+ctrl-cmd-g          // select all matching strings
+
+find/replace window:
+opt-cmd-/           // toggle regex
+opt-cmd-c           // toggle case sensitive
+opt-cmd-s           // toggle only within selection
+opt-cmd-w           // toggle whole word
+ent                 // replace next match
+cmd-ent             // replace all
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Misc
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-p               // toggle command palette (keymap.cson)
+cmd-opt-down        // goto method definition from method call
+ctrl-shift-l        // select grammar (syntax highlighting)
+ctrl-opt-r          // reload Atom
+cmd-shift-:         // correct misspelling
+cmd-k cmd-u         // convert to uppercase
+cmd-k cmd-l         // convert to lowercase
+ctrl-t              // transpose selection
+alt-shift-s         // toggle code snippets
+ctrl-shift-m        // toggle markdown preview
+cmd-opt-i           // toggle developer tools
+ctrl-cmd-f          // toggle full screen
+cmd-shift-c         // display color picker
+ctrl-shift-o        // open url if cursor is on one
+cmd-,               // open configuration editor
+cmd-+               // increase font size
+cmd--               // decrease font size
+cmd-0               // reset font to default size (14)
+cmd-.               // show keybinding resolver
+ctrl-s              // show available auto-completions
+cmd-p soft w        // Editor: Toggle Soft Wrap
+cmd-p ex            // Export Html: Export (print file/pdf)
+cmd-p line n        // Editor: Toggle Line Numbers
+$ atom              // start atom editor
+$ atom .            // start atom editor with pwd as project directory
+$ atom --safe       // start atom with no packages loaded
+$ atom --add [dir]  // add directory as project folder in existing window
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+project-manager
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+ctrl-cmd-p          // toggle project list
+cmd-p pro man s     // Project Manager: Save Project
+cmd-p pro man e     // Project Manager: Edit Projects
+note: project root paths in projects.cson must be unique, secondary paths can
+be duplicated
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+gist-it
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+opt-cmd-g            // gist current file
+shift-opt-cmd-g      // gist current selection
+
+notes:
+token symlinked to ~/.atom/gist-it.token
+new gist are private
+
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+atom-runner
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+ctrl-r                // launch runner for active file
+ctrl-shift-r          // launch runner for selected command
+ctrl-shift-c          // kill running process
+esc                   // close runner pane
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+terminal-plus (platformio-ide-terminal)
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+ctrl-`                  // toggle terminal
+cmd-shift-t             // new terminal (with focus)
+cmd-shift-x             // close active terminal
+ctrl-enter              // insert & run selected text into terminal
+cmd-shift-j             // goto previous terminal
+cmd-shift-k             // goto next terminal
+drag icon to tab-bar    // convert terminal to tab
+cmd-k                   // clear terminal scroll back
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Install | Upgrade
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+$ brew cask install atom
+$ brew cask uninstall --force
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Symbols
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-r               // toggle symbols in buffer
+cmd-shift-r         // toggle symbols in project
+opt-cmd ⬇︎          // goto declaration
+opt-cmd ⬆︎          // return from declaration
+$ tag               // generate ctags file at ~/src/.tag
+$ tagx              // open ctags config file to add exclusions
+ctrl-opt-o          // toggle symbols tree (package: symbols-tree-view)
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Packages
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+$ apm uninstall --hard  // uninstall @ ~/.atom/packages & ~/.atom/dev/packages
+$ apm install [package] // install package
+
+color-picker            // https://atom.io/packages/color-picker
+file-icons              // https://atom.io/packages/file-icons
+git-plus                // https://atom.io/packages/git-plus
+maximize-panes          // https://atom.io/packages/maximize-panes
+merge-conflicts         // https://atom.io/packages/merge-conflicts
+minimap                 // https://atom.io/packages/minimap
+minimap-autohide        // https://atom.io/packages/minimap-autohide
+minimap-codeglance      // https://atom.io/packages/minimap-codeglance
+open-recent             // https://atom.io/packages/open-recent
+platformio-ide-terminal // https://atom.io/packages/platformio-ide-terminal
+project-manager         // https://atom.io/packages/project-manager
+atom-runner             // https://atom.io/packages/atom-runner
+gist-it                 // https://atom.io/packages/gist-it
+
+installed, but disabled:
+atom-beautify           // https://atom.io/packages/atom-beautify
+atom-ctags              // https://atom.io/packages/atom-ctags
+pigments                // https://atom.io/packages/pigments
+symbols-tree-view       // https://atom.io/packages/symbols-tree-view

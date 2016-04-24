@@ -1,0 +1,469 @@
+#####################################################
+##  filename: vim.txt                              ##
+##  path:     ~/src/cheats/                        ##
+##  date:     04/12/2015                           ##
+##  repo:     https://github.com/WebAppNut/cheats  ##
+#####################################################
+
+to assimilate:
+vim: s = kill current character and invoke insert command
+vim: o<esc> + . : keep adding returns or O<esc> + 5. to add new lines or 5O<esc> to add 5 new lines after
+vim: S = kill line and invoke insert
+vim: c + movement kill char and invoke insert
+vim: C kills from current char to line end; invoke insert
+vim: <c-w> + hjkl :jump to respective split
+vim: <c-w> + o :close all panes except current
+vim: <c-w> + c :close window
+vim: <c-w> + w :next window
+
+Update keymapping in vim.txt: tab ? tab q, w, etc.
+
+p in normal mode adds new line
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Misc
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[space]           // remapped leader (\)
+[ldr] !           // show messages (:messages)
+[tab] r           // ls registers; select (:registers :put #)
+[tab]             // omni completion
+u                 // undo
+[tab] u           // redo
+[ldr] c           // toggle commenting
+.                 // repeat last command
+~                 // toggle case
+[c-z]             // send vim to background; goto shell
+$ fg              // resume vim; bring to foreground
+J                 // join line(s)
+ddp               // swap current line with next
+ddkp              // swap current line with previous
+[f10]             // toggle dark/light bg
+                // iterm2 profile ⌘ ^2
+[f3]              // toggle line #s (:set nu/set nu!)
+[f2]              // toggle paste mode
+[f1]              // help
+:h [term]         // help (specific term)
+:version          // list all baked in
+:setl scrollbind  // scroll panes in sync
+:w [path/name]    // duplicate opened buffer
+:%retab           // fix spaces / tabs issues in whole file
+:                 // invoke command mode
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Replace
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+r [enter]         // insert line break @cursor
+r [character]     // single character replacement @cursor
+r [character]     // multi-character replacement @selection
+R                 // multiple character replacement @cursor
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Substitute
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+:s/old/new        // substitute next; single line
+:s/old/new/g      // substitute all; single line
+:%s/old/new/g     // substitute all; all lines
+:%s/old/new/gc    // substitute all; all lines; confirm each
+:%s/old/new/gi    // substitute all; all lines; case insensitive
+:%s/old/new/gI    // substitute all; all lines; case sensitive
+:s/^/ /           // substitute from line start
+:s/$/ /           // substitute from line end
+:5,12s/old/new/g  // from line 5 to line 12 inclusive
+:'a,'bs/old/new/g // from mark a to mark b inclusive
+:'<,'>s/old/new/g // within a visual selection
+:.,$s/old/new/g   // from (.) to ($) inclusivsive
+:.,+2s/old/new/g  // current line (.) & next line x2 (+2)
+:g/^1/s/old/new/g // starting with "1"
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Folds
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+=                 // toggle all folds        // :zR/zM
+-                 // toggle single fold      // :za
+{{{... }}}        // manual via marker
+"  "              // automatic via indent
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Delete
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+x                 // delete line(s) (v-l)
+x                 // delete current character(s) (n)
+X                 // delete previous character (n)
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Cut (delete)
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[ldr] dd          // cut line to quoteplus register/sys clip (n)
+[ldr] d           // cut line to quoteplus register/sys clip (vl)
+[ldr] d           // cut range to quoteplus register/sys clip (v)
+dd                // cut line to default register (n)
+4dd               // cut 4 lines to default register (n)
+d                 // cut line(s) to default register (vl)
+d                 // cut range to default register (v)
+d + move          // cut range to default register (n)
+D                 // cut to line end to default register (v)
+dw                // cut to word end to default register (v)
+daw               // cut around word to default register (v)
+diw               // cut inside word to default register (v)
+dit               // delete inside tag to default register (v)
+[delete] dG       // cut all content to default register (n)
+dH                // delete @cursor to highest line of window
+dM                // delete @cursor to middle line of window
+dL                // delete @cursor to lowest line of window
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Yank
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[ldr] y           // yank range to quoteplus register/sys clip
+y                 // yank range to default register
+yiw               // yank inside word to default register
+yw                // yank to word end to default register
+yy                // yank line to default register
+2yy               // yank 2 lines to default register
+y$                // yank to line end using default register
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Put
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[ldr] p           // put quoteplus register/sys clip (after cursor)
+[ldr] P           // put quoteplus register/sys clip (before cursor)
+p                 // put default register (after cursor)
+P                 // put default register (before cursor)
+[c-r] +           // put default register (before cursor) (i)
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Selection
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+viw               // visual select inside word
+v                 // visual mode
+v movement        // character(s) selection
+v$                // select to line end
+v0                // select to line start
+[ldr] v           // v-line selection (V)
+[tab] v           // v-block selection ([c-v])
+mouse             // visual selection
+o                 // move to other end of selection
+O                 // move to other end of selection (v-block)
+[delete] VG       // v-line select all content (n)
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Insert Mode
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+i                 // append @cursor
+a                 // append after cursor
+A                 // append @line end
+I                 // append @line start
+O                 // append newline above
+o                 // append newline below
+s                 // cut character @cursor & append
+S                 // cut line & append
+ciw               // change inside word (cut & append)
+cw                // change to word end (cut & append)
+C                 // change to line end (cut & append)
+c0                // change to line start (cut & append)
+cc                // change line (cut & append)
+jj                // exit insert mode ([esc])
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Movement
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+# [enter]         // goto line number (#G)
+:98 [enter]       // goto line 98
+10 [enter]        // down 10 lines
+[enter]           // goto buffer end (G)
+[delete]          // goto buffer start (gg)
+0                 // goto line start
+$                 // goto line end
+[ldr] [           // goto line start (non-whitespace)(^)
+[ldr] ]           // goto line end (non-whitespace)(g_)
+g0                // goto screen line start (when wrapped)
+g$                // goto screen line end (when wrapped)
+  k               // go up 1 line
+h   l             // go left/right 1 line
+  j               // go down 1 line
+[c-b]             // go up 1 page
+[c-u]             // go up 1/2 page
+[c-d]             // go down 1/2 page
+[c-f]             // go down 1 page
+w                 // goto next word (punctuation)
+W                 // goto next word (space)
+b                 // goto prior word (punctuation)
+B                 // goto prior word (spaces)
+e                 // goto end of word (punctuation)
+E                 // goto end of word (spaces)
+%                 // goto matching brace/bracket/parentheses
+`.                // goto last edit position
+[c-o]             // goto last cursor position
+H                 // goto highest line of window
+M                 // goto middle line of window
+L                 // goto lowest line of window
+zt                // align window top with cursor
+zz                // align window middle with cursor
+zb                // align window bottom with cursor
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Search
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+/ [pattern]       // search [pattern]
+? [pattern]       // search [pattern] (reverse)
+#                 // search current word
+*                 // search current word (reverse)
+n                 // goto next instance
+N                 // goto prior instance
+,                 // kill highlighting       // :nohlsearch
+/ ^[pattern]      // start with pattern
+/ [pattern]$      // end with pattern
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Indent  // Outdent
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+>                 // indent selection (v)
+<                 // outdent selection (v)
+>..               // indent selection; repeat x2 (v)
+2>                // indent 2 tab stops (v)
+>>                // indent line (n)
+<<                // outdent line (n)
+2>>               // indents 2 lines (n)
+[c-t]             // indent selection (i)
+[c-d]             // outdent selection (i)
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Marks
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+ma                // sets mark named "a"
+                  // lowercase (local); uppercase (global)
+`a                // goto exact column of mark "a"
+'a                // goto line start of mark "a"
+:delm [mark]      // delete marks
+[tab] m           // list marks; goto selection
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Splits
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[ldr] |           // new vertical split      // :vsp
+[ldr] _           // new horizontal split    // :sp
+[c-h]             // focus left
+[c-j]             // focus down
+[c-k]             // focus up
+[c-l]             // focus right
+[^] w _           // max out height
+[^] w |           // max out width
+[^] w =           // normalize sizes
+[tab] w           // goto next pane
+[tab] o           // close panes; keep current
+[tab] c           // close current pane
+drag              // resize panes
+10 ^ w + -        // increase/decrease height x10
+10 ^ w < >        // increase/decrease width X10
+:sp file          // open file(s) in horizontal split
+:vsp file         // open file(s) in vertical split
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Buffers
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[ldr] e           // unnamed buffer          // :enew
+[ldr] E           // new buffer; name        // :e [path/name]
+[ldr] f           // fuzzy find open         // :CtrlP
+[tab] e           // explore toggle          // :Lexplore
+[ldr] w           // write buffer            // :w
+[ldr] q           // close buffer            // :bd
+[tab] q           // force close buffer      // :bd!
+[ldr] h           // goto prior buffer       // :bp
+[ldr] l           // goto next buffer        // :bn
+[ldr] #           // goto buffer 1-9         // :buffer1-9
+[tab] b           // ls buffers; choose      // :buffers; buffer#
+[ldr] s           // invoke Startify         // :Startify
+:b [n]            // goto buffer [n]
+:b [#]            // goto buffer [#]
+:w!!              // force write buffer
+:wq               // write & quit
+:q                // quit
+:q!               // quit w/out writing
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Sessions
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[tab] s           // create; name      // :mksession!
+:source [n]       // load session
+$ vim -S [n]      // load session
+:SaveSession!     // overwrite session
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Tabs
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+:tab sball        // create tab for each buffer
+vim -p file       // open file(s) in tabs
+ZZ                // write & close
+ZQ                // close & quit
+:gt               // next tab
+:gT               // prior tab
+:tabe file        // edit file in new tab
+:tabnew           // open new empty tab
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Diffthis
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+:windo diffthis   // compare buffer content
+[c                // goto prior change
+]c                // goto next change
+:diffget          // resolve diffs (current)
+:diffput          // resolve diffs (other)
+:windo diffoff    // turn off
+Workflow          // 1. open file or unnamed buffer
+                  // 2. split into panes
+                  // 3. open 2nd file or unnamed buffer
+                  // 4: run :windo diffthis
+                  // 5. resolve :diffget/diffput
+                  // 6. off :windo diffoff
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Netrw
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[tab] e           // explore toggle          // :Lexplore
+j                 // go down one file
+k                 // go up one file
+D                 // delete marked files
+V j/k             // mark files (contiguous)
+mf                // mark files toggle
+mr                // mark files (regular expression)
+mu                // kill file marks
+mt                // mark target directory
+mc                // copy marked files to target directory
+md                // vimdiff marked files
+me                // edit marked files
+mg                // apply vimgrep to marked files
+mm                // move marked files to target directory
+mT                // generate tags using marked files
+mx                // apply shell command to marked files
+mz                // compress/decompress marked files
+O                 // obtain marked files
+R                 // rename marked files
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Vundle Plugin Manager
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[tab] pu          // :PluginUpdate
+[tab] pi          // :PluginInstall
+u                 // see change log after update
+l                 // see error log after update/install
+:PluginInstall!   // force install over existing
+:PluginList       // plugin list
+:D                // plugin delete
+                  // edit out entry in .vimrc
+                  // rm -rf ~/.vim/bundle/[plugin]
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Tagbar Plugin
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[ldr] t           // toggle Tagbar on/off
+j                 // move down list
+k                 // move up list
+arrows            // move up/down list
+[enter]           // goto selection; focus left
+q                 // close Tagbar (right focus)
+=                 // toggle all folds
+-                 // toggle single fold
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Startify Plugin
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[ldr] s           // invoke start screen; :Startify
+vim               // start Vim w/ Startify start screen
+e                 // create new unnamed buffer
+[tab] Ss          // save as a session; name it
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Ctrlp Plugin
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[ldr] f           // invoke Ctrlp; quit via [esc]
+[f5]              // refresh directory cache
+[c-f]             // cycle between modes
+[c-d]             // filename search vs. full path
+[c-r]             // regexp search
+[c-j]             // move down results
+[c-k]             // move up results
+                  // arrows/mouse too
+..                // move up parent directory
+....              // up parent directory x2, i.e. ../../
+[c-z]             // mark/unmark multiple files
+[c-o]             // open multiple files
+:                 // execute command @file open
+                  // e.g. :25 to jump to line 25
+                  // e.g. :diffthis (@multiple files)
+[c-y]             // create new file & parent folders
+                  // e.g. ~/desktop/directory/file.txt
+[c-p]             // prior string in command history
+[c-n]             // next string in command history
+[c-v]             // open file(s) in vertical split(s)
+[c-x]             // open file(s) in horizontal split(s)
+[c-t]             // open file(s) in tabs()
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Minimal Settings
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+:set nocp nu ai ts=2 et sw=2 ru cul ls=2 is ic history=100 hid nohl
+: let mapleader = 'space'
+let mapleader=" "
+: Explore
+
+nocp              // nocompatible
+nu                // number
+ai                // autoindent
+ts                // tabstop
+et                // expandtab
+sw                // shiftwidth
+ru                // ruler
+cul               // cursorline
+ls                // laststatus
+is                // incsearch
+ic                // ignorecase
+hid               // hidden
+
+miminal .vimrc all w/out plugins
+:vsp 	# vertical split
+:sp 	# horizontal split
+:q 		# close split
+<C-W><C-J>
+<C-W><C-K>
+<C-W><C-L>
+<C-W><C-H>
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Key Mapping
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+[bs]              // backspace
+[tab]             // tab
+[cr]              // enter
+[enter]           // enter
+[return]          // enter
+[esc]             // escape
+[space]           // space
+[up]              // up arrow
+[down]            // down arrow
+[left]            // left arrow
+[right]           // right arrow
+[f1] - [f12]      // function keys 1 to 12
+[del]             // delete
+[bar]             // '|' or can be escaped as '\|'
+:map              // maps @ normal/visual/select/operator-pending
+:map!             // maps @ insert & command-line
+:nmap             // maps @ normal
+:imap             // maps @ insert
+:vmap             // maps @ visual & select
+:smap             // maps @ select
+:xmap             // maps @ visual
+:cmap             // maps @ command-line
+:omap             // maps @ operator-pending
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Troubleshooting
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+:set [command] ?  // see setting
+rm ~/.vim/view/*  // kill views if sets won't take
+$ vim -u NONE     // load without .vimrc
+$ vim -u .vimrc   // load alternate .vimrc
+[tab] R           // reload vimrc w/out restart
+:source .vimrc    // reload alternate vimrc w/out restart
+:scriptnames      // list scripts loaded @start
+leader combo lag  // check :map for same starting letter
+vim swap recover  // r, then :e, then d
