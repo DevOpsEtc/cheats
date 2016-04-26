@@ -240,6 +240,17 @@ ctrl-shift-c          // kill running process
 esc                   // close runner pane
 
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+script (package)
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-i                 // run current file or selection
+shift-cmd-k           // run current file with profile
+esc                   // close view
+ctrl-w                // close-view
+ctrl-c	              // kill-process
+shift-cmd-J	          // run-by-line-number
+shift-cmd-I           // run-options
+
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 terminal-plus (platformio-ide-terminal)
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 ctrl-`                  // toggle terminal
