@@ -285,9 +285,11 @@ Packages
 $ apm uninstall --hard  // uninstall @ ~/.atom/packages & ~/.atom/dev/packages
 $ apm install [package] // install package
 
+atom-runner             // https://atom.io/packages/atom-runner
 color-picker            // https://atom.io/packages/color-picker
 file-icons              // https://atom.io/packages/file-icons
 git-plus                // https://atom.io/packages/git-plus
+gist-it                 // https://atom.io/packages/gist-it
 maximize-panes          // https://atom.io/packages/maximize-panes
 merge-conflicts         // https://atom.io/packages/merge-conflicts
 minimap                 // https://atom.io/packages/minimap
@@ -296,8 +298,7 @@ minimap-codeglance      // https://atom.io/packages/minimap-codeglance
 open-recent             // https://atom.io/packages/open-recent
 platformio-ide-terminal // https://atom.io/packages/platformio-ide-terminal
 project-manager         // https://atom.io/packages/project-manager
-atom-runner             // https://atom.io/packages/atom-runner
-gist-it                 // https://atom.io/packages/gist-it
+script                  // https://atom.io/packages/script
 
 installed, but disabled:
 atom-beautify           // https://atom.io/packages/atom-beautify
