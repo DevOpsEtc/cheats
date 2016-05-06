@@ -3,6 +3,6 @@
 **Roadmap:**
 - Reformat layout
 - Assimilate loose notes
-- remove .gitignore cheats as pushed
+- Add all my other cheats once reformatted
 
 **Feel free to fork!**
