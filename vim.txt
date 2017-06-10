@@ -2,7 +2,7 @@
 ##  filename: vim.txt                              ##
 ##  path:     ~/src/cheats/                        ##
 ##  date:     04/12/2015                           ##
-##  repo:     https://github.com/WebAppNut/cheats  ##
+##  repo:     https://github.com/DevOpsEtc/cheats  ##
 #####################################################
 
 to assimilate:

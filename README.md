@@ -21,6 +21,6 @@
 
 **Notes:**
 - Plain text used for cleaner cli output via {cat,less,more,grep,sed,awk}
-- See https://github.com/WebAppNut/provision for bash functions & alias
+- See https://github.com/DevOpsEtc/provision for bash functions & alias
 
 **Feel free to fork!**

@@ -1,367 +1,341 @@
-#####################################################
-##  filename: atom.txt                             ##
-##  path:     ~/src/cheats/                        ##
-##  date:     05/22/2016                           ##
-##  repo:     https://github.com/WebAppNut/cheats  ##
-#####################################################
-
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Bookmarks
+Atom Text Editor
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-f2              # toggle bookmark
-ctrl-f2             # view all bookmarks
-cmd-shift-f2        # clear all bookmarks
-f2                  # goto next bookmark
-shift-f2            # goto previous bookmark
-
+date          # 11/02/2016
+file          # atom.txt
+path          # ~/src/cheats/
+repo          # https://github.com/DevOpsEtc/cheats
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Bookmark Actions
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-f2        # toggle bookmark
+ctrl-f2       # view all bookmarks
+cmd-shft-f2   # clear all bookmarks
+f2            # goto next bookmark
+shft-f2       # goto prior bookmark
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 Character Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-k cmd-u         # convert to uppercase
-cmd-k cmd-l         # convert to lowercase
-cmd-shift-u         # convert to uppercase; [custom keybinding]
-cmd-u               # convert to lowercase; [custom keybinding]
-ctrl-t              # transpose selection
-opt-t               # convert spaces to tabs; [custom keybinding]
-opt-s               # convert tabs to spaces; [custom keybinding]
-
-multi-cursor editing:
-1. ctrl-cmd-g       # select all occurrences of selected character(s);
-   OR cmd-d         # select word; repeat for next occurrence
-2. key(s)           # substitute selections with key input
-   OR ⬅︎ ➡︎          # move cursor to desired editing position
-
-column editing:
-1. ctrl-shift ⬆︎⬇︎   # select columns of characters up/down
-2. any key(s)       # insert key input at cursor
-    OR ⬅︎ ➡︎         # move cursor to desired editing position
-    OR shift-⬅︎ ➡︎   # make selection to delete or substitute with key input
-
+cmd-k cmd-u   # convert to uppercase
+cmd-k cmd-l   # convert to lowercase
+cmd-shft-u    # convert to uppercase (custom keys)
+cmd-u         # convert to lowercase (custom keys)
+ctrl-t        # transpose selection
+opt-t         # convert spaces to tabs (custom keys)
+opt-s         # convert tabs to spaces (custom keys)
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Copy | Cut | Paste | Delete
+Multi-Cursor Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-c               # copy selected character(s)
-cmd-x               # cut selected character(s)
-ctrl-k              # cut to end of line
-cmd-v               # paste character(s)
-cmd-del             # delete to start of line
-opt-del             # delete to beginning of word
-opt-d               # delete to end of word
-ctrl-shift-k        # delete line
-opt-x               # delete line; [custom keybinding]
-
+cmd-d         # select character block
+cmd-d         # select next matching character block
+cmd-k         # skip current matched character block
+cmd-ctrl-g    # select all matching character blocks
+cmd-click     # add additional cursor where clicked
+ctrl-shft-arw # add additional column cursor up/down
+arrow         # move position of all cursors
+shft-arw      # select cursor characters left/right
+any key       # substitute/insert text at cursors
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Files | Tabs | Windows
+Copy ∣ Cut ∣ Paste ∣ Delete Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-t               # toggle fuzzy find (project scope)
-cmd-b               # toggle open file list
-cmd-n               # new file
-cmd-o               # open file
-cmd-shift-t         # reopen last file
-cmd-s               # save file
-cmd-shift-s         # save file as
-cmd-opt-s           # save all files
-cmd-w               # close tab
-cmd-opt ⬅︎ ➡︎        # goto prior/next tab
-cmd-shift-{}        # goto prior/next tab
-cmd-[x]             # goto to tab Number
-cmd-shift-n         # new window
-cmd-shift-w         # close window (all tabs); [custom keybinding]
-ctrl-tab            # toggle between two MRU tabs; hold ctrl down to cycle all
-opt-cmd-o           # create new file on any path; package: advanced-open-file
-
+cmd-c         # copy selected character(s)
+cmd-x         # cut selected character(s)
+ctrl-k        # cut to end of line
+cmd-v         # paste character(s)
+cmd-del       # delete to start of line
+opt-del       # delete to beginning of word
+opt-d         # delete to end of word
+ctrl-shft-k   # delete line
+opt-x         # delete line (custom keys)
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Find | Replace
+File ∣ Tab ∣ Window Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-f               # find string in file
-cmd-e               # find string under cursor in file
-cmd-shift-f         # find selected string in file
-opt-cmd-f           # replace with selected string in file
-cmd-g               # find next matching string
-cmd-shift-g         # find previous matching string
-cmd-d               # select next matching string
-ctrl-cmd-g          # select all matching strings
-
-find/replace window:
-opt-cmd-/           # toggle regex
-opt-cmd-c           # toggle case sensitive
-opt-cmd-s           # toggle only within selection
-opt-cmd-w           # toggle whole word
-ent                 # replace next match
-cmd-ent             # replace all
-
+$ atom ~/path # open folder in new project window
+$ atom ~/file # open file in current project window
+$ atom .      # open $pwd in new project window
+cmd-shft-w    # close project folder
+cmd-t         # toggle fuzzy find (project scope)
+cmd-b         # toggle open file list
+cmd-n         # new file
+cmd-o         # open file
+cmd-shft-t    # reopen last file
+cmd-s         # save file
+cmd-shft-s    # save file as
+cmd-opt-s     # save all files
+cmd-w         # close tab
+cmd-opt arw   # goto prior/next tab
+cmd-shft {}   # goto prior/next tab
+cmd-[x]       # goto tab number
+cmd-1         # goto first tab
+cmd-9         # goto last tab
+cmd-shft-n    # new window
+cmd-shft-w    # close project window (custom keys)
+cmd-q         # quit atom
+ctrl-tab      # toggle between two most recent tabs
+ctrl-tab-tab  # repeat tab to cycle multiple tabs
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Folding
+Find ∣ Replace Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-opt-z               # fold all; [custom keybinding]
-opt-cmd-[ ]         # fold/unfold indentation
-opt-cmd-shift-[ ]   # fold/unfold everything
-opt-cmd-ctrl-f      # fold arbitrary selection
-cmd-k cmd-[1-9]     # fold indentation level
-
+cmd-f         # find selected string in file
+cmd-e         # find string under cursor in file
+cmd-shft-f    # find string in project files
+cmd-opt-f     # replace with selected string in file
+cmd-g         # find next matching string
+cmd-shft-g    # find previous matching string
+cmd-d         # select next matching string
+cmd-ctrl-g    # select all matching strings
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Git | Github
+Find Window Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-shift-b         # find modified & untracked files in current repo
-cmd-opt-z           # check out HEAD revision of current file
-opt-g g             # open repo on github.com
-opt-g o             # open file on github.com
-opt-g b             # open blame view for file on github.com
-opt-g h             # open history view for file on github.com
-opt-g i             # open issues view for repo on github.com
-opt-g r             # open compare page for current branch on github.com
-opt-g c             # copy github.com URL for currently selected line(s)
-opt-g d             # toggle list of diffs in file
-opt-g ⬆︎⬇︎           # goto next/previous diff in file
-
+cmd-opt-/     # toggle regex
+cmd-opt-c     # toggle case sensitive
+cmd-opt-s     # toggle only within selection
+cmd-opt-w     # toggle whole word
+ent           # replace next match
+cmd-ent       # replace all
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Line
+Folding Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-/               # toggle line comments
-cmd-] [             # line indent/outdent
-cmd-shift-d         # duplicate line
-opt-w               # duplicate line; [custom keybinding]
-ctrl-cmd-⬆︎⬇︎        # move line(s) up/down
-opt-⬆︎⬇︎             # move line(s) up/down; [custom keybinding]
-cmd-ent             # insert new line after current line
-cmd-shift-ent       # insert new line before current line
-cmd-j               # join current and next lines
-cmd-c               # copy line (no characters selected)
-cmd-l               # select line
-cmd-x               # cut line (no characters selected)
-cmd-v               # paste line
-ctrl-shift-k        # delete line
-opt-x               # delete line; [custom keybinding]
-
+opt-z           # fold all (custom keys)
+cmd-opt-[]      # fold/unfold indentation
+cmd-opt-shft-[] # fold/unfold everything
+cmd-opt-ctrl-f  # fold arbitrary selection
+cmd-k cmd-[1-9] # fold indentation level
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Misc
+Git ∣ Github Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-ctrl-shift-l        # select grammar (syntax highlighting)
-ctrl-opt-r          # reload Atom
-cmd-shift-:         # correct misspelling
-cmd-opt-i           # toggle developer tools
-cmd-z               # undo
-cmd-y               # redo
-ctrl-shift-c        # copy path
-ctrl-shift-c        # copy path
-ctrl-s              # show available auto-completions
-ctrl-space          # toggle autocomplete
-cmd-shift-c         # display color picker
-ctrl-shift-o        # open url if cursor is on one
-cmd-,               # open configuration editor
-cmd-p soft w        # Editor: Toggle Soft Wrap
-cmd-p ex            # Export Html: Export (print file/pdf)
-cmd-p line n        # Editor: Toggle Line Numbers
-
+cmd-shft-b    # find modified & untracked repo files
+cmd-opt-z     # checkout HEAD revision of file
+opt-g g       # goto repo @github.com
+opt-g o       # goto file @github.com
+opt-g b       # goto file blame view @github.com
+opt-g h       # goto file history view @github.com
+opt-g i       # goto repo issues view @github.com
+opt-g r       # goto compare branch view @github.com
+opt-g c       # copy github.com URL @selected line
+opt-g d       # toggle list of diffs in file
+opt-g arw l/r # goto next/previous diff in file
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Movement
+Line Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-ctrl-g [x] ent      # toggle goto line number; go to line
-cmd-shift-l [x] ent # toggle goto line number; go to line; [custom keybinding]
-ctrl-m              # goto matching bracket
-opt-b               # goto start of word
-opt-f               # goto end of word
-cmd-⬆︎⬇︎             # goto start/end of file
-cmd-⬅︎ ➡︎            # goto start/end of line
-ctrl-a              # goto start of line
-ctrl-e              # goto end of line
-
+ctrl-g        # toggle goto line window
+cmd-/         # toggle line comments
+cmd-][        # line indent/outdent
+cmd-shft-d    # duplicate line
+opt-w         # duplicate line (custom keys)
+ctrl-cmd-arw  # move line(s) up/down
+opt-arw u/d   # move line(s) up/down (custom keys)
+cmd-ent       # insert new line after current line
+cmd-shft-ent  # insert new line before current line
+cmd-j         # join current and next lines
+cmd-c         # copy line (no characters selected)
+cmd-l         # select line
+cmd-x         # cut line (no characters selected)
+cmd-v         # paste line
+ctrl-shft-k   # delete line
+opt-x         # delete line (custom keys)
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Panes
+Misc Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-ctrl-|              # split right, copy active; [custom keybinding]
-ctrl--              # split bottom, copy active; [custom keybinding]
-ctrl-⬆︎⬇︎⬅︎ ➡︎        # focus pane up/down/left/right; [custom keybinding]
-cmd-w               # close current pane
-opt-cmd-m           # maximize pane; [maximize-panes; custom keybinding]
-
+ctrl-shft-l   # select grammar (syntax highlighting)
+ctrl-opt-r    # reload Atom
+cmd-shft-:    # correct misspelled word under cursor
+cmd-opt-i     # toggle developer tools
+cmd-z         # undo
+cmd-y         # redo
+ctrl-shft-c   # copy path of current file
+ctrl-s        # show available auto-completions
+ctrl-space    # toggle autocomplete
+cmd-shft-c    # display color picker (package)
+ctrl-shft-o   # open url under cursor
+cmd-,         # open configuration editor
+cmd-p soft w  # Editor: Toggle Soft Wrap
+cmd-p ex      # Export Html: Export (print file/pdf)
+cmd-p line n  # Editor: Toggle Line Numbers
+$ atom --safe # start with packages disabled
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Selection
+Position Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-opt-shift-b f       # select to start/end of word; repeatable
-opt-shift-⬅︎ ➡︎      # select to start/end of word; repeatable
-cmd-d               # select word; select next occurrence
-ctrl-shift-w        # select word
-shift-⬆︎⬇︎ ⬅︎ ➡︎      # select character(s) up/down/left/right
-shift-cmd-⬅︎ ➡︎      # select to start/end of line
-shift-cmd-⬆︎⬇︎       # select to start/end of file
-cmd-l               # select line
-cmd-a               # select all
-ctrl-cmd-m          # select inside brackets
-
+ctrl-g [x]    # toggle goto line number; go to line
+ctrl-m        # goto matching bracket
+opt-b         # goto start of word
+opt-f         # goto end of word
+cmd-arw u/d   # goto start/end of file
+cmd-arw l/r   # goto start/end of line
+ctrl-a        # goto start of line
+ctrl-e        # goto end of line
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Starting Atom (command line)
+Pane Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-$ atom              # start atom editor
-$ atom .            # start atom editor with pwd as project directory
-$ atom --safe       # start atom with no packages loaded
-$ atom --add [dir]  # add directory as project folder in existing window
-
+ctrl-\        # split right (custom keys)
+ctrl--        # split bottom (custom keys)
+ctrl-arw      # focus pane u/d/l/r (custom keys)
+cmd-w         # close current pane
+cmd-opt-m     # maximize pane (package; custom keys)
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Symbols
+Select Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-r               # toggle symbols in buffer
-cmd-shift-r         # toggle symbols in project
-opt-cmd ⬆︎          # goto function declaration
-opt-cmd ⬇︎          # goto function call
-$ tag               # generate ctags file at ~/src/.tag
-$ tagx              # open ctags config file to add exclusions
-
+opt-shft-b/f  # select word to start/end; repeatable
+opt-shft-arw  # select word to start/end; repeatable
+cmd-d         # select word; repeat for next match
+ctrl-shft-w   # select word
+shft arw l/r  # select character(s) left or right
+shft arw u/d  # select character(s) up or down line
+shft-cmd-arw  # select to start/end of line or file
+cmd-l         # select line
+cmd-a         # select all
+ctrl-cmd-m    # select inside brackets
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Tree View
+Symbol/Tag Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-\               # toggle tree view
-cmd-shift-o         # add project folder
-ctrl-0              # toggle tree view focus
-
-tree focus:
-a [path/name]       # add new file
-m [path]            # move or rename file
-del                 # delete file
-d                   # duplicate file
-shift-a             # add new folder
-i                   # toggle display of VCS ignored files
-ent                 # open selected file
-⬅︎ ➡︎                # collapse/expand folders
-opt-⬅︎ ➡︎            # recursively collapse/expand folders
-ctrl-shift-c        # copy full path
-
+cmd-r         # toggle symbols in buffer
+cmd-shft-r    # toggle symbols in project
+cmd-opt-arw u # goto function declaration
+cmd-opt-arw d # goto function call
+$ tag         # generate ctags file at ~/src/.tag
+$ tagx        # edit ctags config to add exclusions
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Tree View Actions
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+cmd-\         # toggle tree view
+cmd-shft-o    # add project folder
+ctrl-0        # toggle tree view focus
+▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+Tree Window Actions
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+a [path/name] # add new file
+m [path]      # move or rename file
+del           # delete file
+d             # duplicate file
+shft-a        # add new folder
+i             # toggle display of VCS ignored files
+ent           # open selected file
+arw l/r       # collapse/expand folders
+opt-arw l/r   # recursively collapse/expand folders
+ctrl-shft-c   # copy full path
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 Window Actions
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-p               # toggle command palette ;[custom keybinding]
-cmd-0               # toggle show invisibles; [custom keybinding]
-ctrl-cmd-f          # toggle full screen
-cmd-+               # increase font size
-cmd--               # decrease font size
-cmd-opt-0           # reset font to default size (14); [custom keybinding]
-opt-shift-s         # toggle code snippets
-ctrl-shift-m        # toggle markdown preview
-cmd-.               # show keybinding resolver
-opt-cmd--           # increase width right-side gutter
-opt-cmd-=           # decrease width right-side gutter
-
+cmd-p         # toggle command palette (custom keys)
+cmd-0         # toggle show invisibles (custom keys)
+ctrl-cmd-f    # toggle full screen
+cmd-+         # increase font size
+cmd--         # decrease font size
+cmd-opt-0     # reset font size (14px; custom keys)
+opt-shft-s    # toggle code snippets
+ctrl-shft-m   # toggle markdown preview
+cmd-.         # show keybinding resolver
+cmd-opt--     # increase width right-side gutter
+cmd-opt-=     # decrease width right-side gutter
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-gist-it             [package]
+PKG: gist-it
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-opt-cmd-g           # gist current file
-shift-opt-cmd-g     # gist current selection
-
-notes:
-- token symlinked to ~/.atom/gist-it.token
-- new gists are private
-
+cmd-opt-g      # gist current file
+shft-cmd-opt-g # gist current selection
+notes: token symlinked to ~/.atom/gist-it.token, &
+new gists are private
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-git-plus            [package]
+PKG: git-plus
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-shift-cmd-h         # open git-plus command palette
-
+shft-cmd-h     # open git-plus command palette
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-linter              [package]
+PKG: linter
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-opt-l               # toggle linter window; [custom keybinding]
-shift-opt->         # goto next line error
-
+opt-l          # toggle linter window (custom keys)
+shft-opt->     # goto next line error
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-open-in-browsers    [package]
+PKG: project-manager
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-ctrl-alt-o          # open page in browser (chrome)
-
+ctrl-cmd-p        # toggle project list
+cmd-p pro man s   # Project Manager: Save Project
+cmd-p pro man e   # Project Manager: Edit Projects
+note: projects.cson root paths must be unique, but
+secondary paths can be dupes
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-project-manager     [package]
+PKG: script
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-ctrl-cmd-p          # toggle project list
-cmd-p pro man s     # Project Manager: Save Project
-cmd-p pro man e     # Project Manager: Edit Projects
-note: projects.cson root paths must be unique; secondary paths can be dupes
-
+cmd-i         # run current file or selection
+shft-cmd-k    # run current file with profile
+esc           # close view
+ctrl-w        # close-view
+ctrl-c        # kill-process
+shft-cmd-J    # run-by-line-number
+shft-cmd-I    # run-options
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-script              [package]
+PKG: terminal-plus fork: platformio-ide-terminal
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-cmd-i               # run current file or selection
-shift-cmd-k         # run current file with profile
-esc                 # close view
-ctrl-w              # close-view
-ctrl-c              # kill-process
-shift-cmd-J         # run-by-line-number
-shift-cmd-I         # run-options
-
+ctrl-`        # toggle show term or create new
+cmd-opt-n     # new term (custom keys)
+cmd-alt-r     # rename active term (custom keys)
+ctrl-1        # toggle term fullscreen (custom keys)
+cmd-shft-x    # close active term
+cmd-opt-x     # close all terms (custom keys)
+ctrl-enter    # insert & run selected text into term
+cmd-shft-a    # goto previous term (custom keys)
+cmd-shft-e    # goto next term (custom keys)
+ctrl-l ctrl-l # clear term scroll back
+note: drag term icon from status bar to tab bar
+converts term to tab
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-terminal-plus fork: platformio-ide-terminal [package]
+PKG: theme-toggler
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-ctrl-`              # toggle terminal; create new if none exists
-cmd-opt-n           # new terminal; [custom keybinding]
-ctrl-1              # toggle terminal fullscreen; [custom keybinding]
-cmd-shift-x         # close active terminal
-cmd-opt-x           # close all terminals; [custom keybinding]
-ctrl-enter          # insert & run selected text into terminal
-cmd-shift-a         # goto previous terminal; [custom keybinding]
-cmd-shift-e         # goto next terminal; [custom keybinding]
-ctrl-l ctrl-l       # clear terminal scroll back
-put icon in tab-bar # convert terminal to tab
-
+ctrl-2        # toggle dark/light (custom keys)
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-theme-toggler       [package]
+PKG: todo-show
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-ctrl-2              # toggle between one-dark & one-light; [custom keybinding]
-
+ctrl-shft-t   # toggle ToDo Show window
+t~ [text]     # task
+c~ [text]     # cheat
+f~ [text]     # fix
+q~ [text]     # question
+n~ [text]     # note
+p~ [text]     # project
+e~ [text]     # exercise
+r~ [text]     # reading
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-todo-show           [package]
+Atom Install ∣ Atom Upgrade
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-ctrl-shift-t        # toggle ToDo Show window
-t- [text]           # task
-c- [text]           # cheat
-f- [text]           # fix
-q- [text]           # question
-n- [text]           # note
-
-▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
-Atom Install | Atom Upgrade
-▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-$ brew cask install atom           # install atom
-$ brew cask install --force atom   # force reinstall of Atom
-$ brew cask uninstall --force atom # uninstall all versions of Atom
-
+$ brew cask install atom            # install atom
+$ brew cask install --force atom    # update atom
+$ brew cask uninstall --force atom  # uninstall all
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 Atom Package Manager
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-$ apm uninstall [package]   # uninstall package from ~/.atom/packages
-$ apm install [package]     # install package
-$ apm ls -ib | sed s/@.*//  # plain list of installed packages/themes
-$ apm disable [package]     # disable package(s)
-$ apm enable [package]      # enable package(s)
-
+$ apm uninstall [pkg]      # uninstall package(s)
+$ apm install [pkg]        # install package(s)
+$ apm ls -ib               # package list
+$ apm ls -ib | sed s/@.*// # plain package list
+$ apm disable [pkg]        # disable package(s)
+$ apm enable [pkg]         # enable package(s)
 ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
 Atom Packages Installed
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
-advanced-open-file          # https://atom.io/packages/advanced-open-file
-color-picker                # https://atom.io/packages/color-picker
-open-in-browsers            # https://atom.io/packages/open-in-browsers
-emmet                       # https://atom.io/packages/emmet
-export-html                 # https://atom.io/packages/export-html
-file-icons                  # https://atom.io/packages/file-icons
-gist-it                     # https://atom.io/packages/gist-it
-git-plus                    # https://atom.io/packages/git-plus
-language-docker             # https://atom.io/packages/language-docker
-language-viml               # https://atom.io/packages/language-viml
-linter                      # https://atom.io/packages/linter
-linter-coffeelint           # https://atom.io/packages/linter-coffeelint
-linter-csslint              # https://atom.io/packages/linter-csslint
-linter-htmlhint             # https://atom.io/packages/linter-htmlhint
-linter-less                 # https://atom.io/packages/linter-less
-linter-jshint               # https://atom.io/packages/linter-jshint
-linter-jsonlint             # https://atom.io/packages/linter-jsonlint
-linter-markdown             # https://atom.io/packages/linter-markdown
-linter-shellcheck           # https://atom.io/packages/linter-shellcheck
-maximize-panes              # https://atom.io/packages/maximize-panes
-merge-conflicts             # https://atom.io/packages/merge-conflicts
-minimap                     # https://atom.io/packages/minimap
-minimap-autohide            # https://atom.io/packages/minimap-autohide
-minimap-codeglance          # https://atom.io/packages/minimap-codeglance
-open-in-browsers            # https://atom.io/packages/open-in-browser
-open-recent                 # https://atom.io/packages/open-recent
-platformio-ide-terminal     # https://atom.io/packages/platformio-ide-terminal
-project-manager             # https://atom.io/packages/project-manager
-script                      # https://atom.io/packages/script
-todo-show                   # https://atom.io/packages/todo-show
-theme-toggler               # https://atom.io/packages/theme-toggler
+https://atom.io/packages/color-picker
+https://atom.io/packages/emmet
+https://atom.io/packages/export-html
+https://atom.io/packages/file-icons
+https://atom.io/packages/gist-it
+https://atom.io/packages/git-plus
+https://atom.io/packages/language-docker
+https://atom.io/packages/language-viml
+https://atom.io/packages/linter
+https://atom.io/packages/linter-coffeelint
+https://atom.io/packages/linter-csslint
+https://atom.io/packages/linter-htmlhint
+https://atom.io/packages/linter-less
+https://atom.io/packages/linter-jshint
+https://atom.io/packages/linter-jsonlint
+https://atom.io/packages/linter-markdown
+https://atom.io/packages/linter-shellcheck
+https://atom.io/packages/maximize-panes
+https://atom.io/packages/merge-conflicts
+https://atom.io/packages/minimap
+https://atom.io/packages/minimap-autohide
+https://atom.io/packages/minimap-codeglance
+https://atom.io/packages/open-in-browser
+https://atom.io/packages/open-recent
+https://atom.io/packages/platformio-ide-terminal
+https://atom.io/packages/project-manager
+https://atom.io/packages/script
+https://atom.io/packages/todo-show
+https://atom.io/packages/theme-toggler
